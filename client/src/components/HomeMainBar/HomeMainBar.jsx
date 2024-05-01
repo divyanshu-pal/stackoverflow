@@ -13,42 +13,7 @@ const HomeMainBar = () => {
   const navigate = useNavigate();
 
   const questionsList = useSelector(state => state.questionsReducer)
-  // console.log(questionsList);
-//   var questionList = [{
-//     id:1,
-//     upVotes:3,
-//     downVotes:2,
-//     noOfAnswers:2,
-//     questionTitle:'what is arrow function ?',
-//     questionTags:["C++","java","javascript","React JS"],
-//     askedOn:"2 hours ago",
-//     userPosted:'Prithvi',
-//     userId:1,
-//     answer:[{
-//       answerRedOn: "16 mar",
-//       userAnswered:"gdfgge",
-//       answerBody:'answer',
-//       userId:2
-//   }]
-//   },
-//   {
-//     id:2,
-//     upVotes:5,
-//     downVotes:1,
-//     noOfAnswers:5,
-//     questionTitle:'use of back ticks ?',
-//     questionTags:["C++","java","javascript","React JS","node"],
-//     askedOn:"2 months ago",
-//     userPosted:'Priyam',
-//     userId:2,
-//     answer:[{
-//       answerRedOn: "16 aug",
-//       userAnswered:"fdgge",
-//       answerBody:'answer',
-//       userId:5
-//   }]
-//   }
-// ]
+ 
   const checkAuth = ()=>{
     if(user === null){
       alert('login or signup to ask a question');
